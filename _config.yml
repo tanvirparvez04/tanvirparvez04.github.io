@@ -2,13 +2,16 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
-first_name: Md Kamrul
-middle_name: 
-last_name: Islam
+title: Md Tanvir Parvez
+first_name: Md Tanvir
+middle_name:
+last_name: Parvez
+
 contact_note: >
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Research Engineer and Graduate Student specializing in Foundation Models, Retrieval-Augmented Generation, Information Extraction, Deep Learning, Computer Vision, Medical Imaging, Knowledge Graphs, and Big Data Analytics.
+  Statistics graduate with interests in data science, machine learning,
+  and time series forecasting. Experienced in rice yield prediction using
+  LSTM models and geo-spatial reasoning evaluation.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
@@ -17,7 +20,7 @@ keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your o
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
-url: https://kamrulkonok.github.io # the base hostname & protocol for your site
+url: https://tanvirparvez04.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
