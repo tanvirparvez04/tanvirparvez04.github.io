@@ -1,59 +1,27 @@
-itle: Md Tanvir Parvez
-first_name: Md Tanvir
-middle_name:
-last_name: Parvez
+# -----------------------------------------------------------------------------
+# Site settings
+# -----------------------------------------------------------------------------
 
-email: tanvir.parvez.stat@gmail.com
-
-description: >
-  Statistics graduate with interests in data science, machine learning,
-  and time series forecasting. Experienced in rice yield prediction using
-  LSTM models and geo-spatial reasoning evaluation.
-
+title: blank # the website title (if blank, full name will be used instead)
+first_name: Md Kamrul
+middle_name: 
+last_name: Islam
 contact_note: >
-  The best way to reach me is via email or LinkedIn.
-
-keywords: statistics, data science, machine learning, time series, forecasting, portfolio
-lang: en
-icon: 📊
-
-# =============================================================================
-# URL SETTINGS (VERY IMPORTANT – DO NOT CHANGE FORMAT)
-# =============================================================================
-
-url: https://tanvirparvez04.github.io
-baseurl: ""
-
-# =============================================================================
-# FOOTER
-# =============================================================================
-
+description: > # the ">" symbol means to ignore newlines until "footer_text:"
+  Research Engineer and Graduate Student specializing in Foundation Models, Retrieval-Augmented Generation, Information Extraction, Deep Learning, Computer Vision, Medical Imaging, Knowledge Graphs, and Big Data Analytics.
 footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with the
-  <a href="https://github.com/alshedivat/al-folio" target="_blank">al-folio</a> theme.
-  Hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
+  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
+keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
+lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
+icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
-last_updated: false
-back_to_top: true
-
-# =============================================================================
-# SOCIAL LINKS
-# =============================================================================
-
-github_username: tanvirparvez04
-linkedin_username: tanvirparvez04
-
-# =============================================================================
-# CV SETTINGS
-# =============================================================================
-
-cv:
-  path: assets/pdf/Md_Tanvir_Parvez_CV.pdf
-
-
-
-
-
+url: https://kamrulkonok.github.io # the base hostname & protocol for your site
+baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
+last_updated: false # set to true if you want to display last updated in the footer
+impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
+back_to_top: true # set to false to disable the back to top button
 
 # -----------------------------------------------------------------------------
 # Theme
@@ -79,7 +47,7 @@ repo_trophies:
 
 navbar_fixed: true
 footer_fixed: true
-search_enabled: true
+search_enabled: false
 socials_in_search: true
 posts_in_search: true
 bib_search: true
@@ -295,8 +263,8 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Islam]
+  first_name: [Md Kamrul, M. K.]
 
   style: apa
   locale: en
@@ -656,20 +624,22 @@ third_party_libraries:
 # Get external JSON data
 # -----------------------------------------------------------------------------
 
-jekyll_get_json:
-  - data: resume
-    json: assets/json/resume.json # it can also be an url
+# Commented out to use cv.yml instead of resume.json
+# jekyll_get_json:
+#   - data: resume
+#     json: assets/json/resume.json # it can also be an url
 
-jsonresume:
-  - basics
-  - work
-  - education
-  - publications
-  - projects
-  - volunteer
-  - awards
-  - certificates
-  - skills
-  - languages
-  - interests
-  - references
+# Commented out to use cv.yml instead
+# jsonresume:
+#   - basics
+#   - work
+#   - education
+#   - publications
+#   - projects
+#   - volunteer
+#   - awards
+#   - certificates
+#   - skills
+#   - languages
+#   - interests
+#   - references
