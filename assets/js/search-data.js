@@ -440,28 +440,35 @@ ninja.data = [{
         title: 'email',
         section: 'Socials',
         handler: () => {
-          window.open("mailto:%6D%64%6B%61%6D%72%75%6C.%69%73%6C%61%6D@%73%74%75%64%65%6E%74-%63%73.%63%6F%6D", "_blank");
+          window.open("mailto:%74%61%6E%76%69%72.%70%61%72%76%65%7A.%73%74%61%74@%67%6D%61%69%6C.%63%6F%6D", "_blank");
         },
       },{
         id: 'social-github',
         title: 'GitHub',
         section: 'Socials',
         handler: () => {
-          window.open("https://github.com/kamrulkonok", "_blank");
+          window.open("https://github.com/tanvirparvez04", "_blank");
         },
       },{
         id: 'social-linkedin',
         title: 'LinkedIn',
         section: 'Socials',
         handler: () => {
-          window.open("https://www.linkedin.com/in/kamrulkonok", "_blank");
+          window.open("https://www.linkedin.com/in/tanvirparvez04", "_blank");
         },
       },{
         id: 'social-kaggle',
         title: 'Kaggle',
         section: 'Socials',
         handler: () => {
-          window.open("https://www.kaggle.com/kamrulislamkonok", "_blank");
+          window.open("https://www.kaggle.com/tanvirparvez07", "_blank");
+        },
+      },{
+        id: 'social-scholar',
+        title: 'Google Scholar',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://scholar.google.com/citations?user=XoKwEMsAAAAJ", "_blank");
         },
       },{
       id: 'light-theme',
