@@ -23,3 +23,32 @@ $max-content-width: {{ site.max_width }};
   "tabler-icons/tabler-icons-filled.scss",
   "tabler-icons/tabler-icons-outline.scss"
 ;
+
+/* ============================= */
+/* Custom Navbar Styling */
+/* ============================= */
+
+/* Navbar Background */
+.navbar {
+  background-color: #0f172a !important;
+}
+
+/* Navigation Links */
+.navbar .nav-link {
+  color: #ffffff !important;
+}
+
+/* Hover Effect */
+.navbar .nav-link:hover {
+  color: #38bdf8 !important;   /* subtle modern blue hover */
+}
+
+/* Brand / Title */
+.navbar .navbar-brand {
+  color: #ffffff !important;
+}
+
+/* Icons (GitHub, LinkedIn, etc.) */
+.navbar i {
+  color: #ffffff !important;
+}
