@@ -1,165 +1,130 @@
-- title: General Information
-  type: map
-  contents:
-    - name: Name
-      value: Md Kamrul Islam
-    - name: Date of Birth
-      value: 09th July 1999
-    - name: Languages
-      value: Bengali (Native), English (Fluent), Chinese (Fluent), French (Beginner)  
+cv:
+  name: Md Tanvir Parvez
+  label: Research Assistant | M.Sc. $ B.Sc. in Statistics
+  email: tanvir.parvez.stat@gmail.com
+  location: Dhaka, Bangladesh
+  image: ""
+  summary: Graduate student in Statistics with research experience in large language models, geo-spatial reasoning, and machine learning systems. Contributed to ICML 2025 (Spotlight) publication and worked on benchmark development for evaluating foundation models.
 
-- title: Research Interest
-  type: list
-  contents:
-    - Foundation Models, Retrieval-Augmented Generation, Information Extraction, Deep Learning, Computer Vision, Medical Imaging, and Knowledge Graphs.
+  social_networks:
+    - network: GitHub
+      username: tanvirparvez04
+    - network: LinkedIn
+      username: tanvirparvez04
+    - network: Google Scholar
+      username: XoKwEMsAAAAJ
+    - network: Kaggle
+      username: tanvirparvez07
 
-- title: Education
-  type: time_table
-  contents:
-    - title: Erasmus Mundus Master's Degree in Big Data Management and Analytics
-      institution: CentraleSupélec, Université Paris-Saclay | Universitat Politècnica de Catalunya (UPC) | Université libre de Bruxelles (ULB)
-      year: Sept 2023 -- Oct 2025
-      location: Gif-sur-Yvette, France | Barcelona, Spain | Brussels, Belgium
-      description:
-        - title: Thesis
-          contents:
-            - "SecBPMN-GPT: A Hybrid LLM & Rule-Based Framework for Automating Security Annotation in Business Process Models"
-    - title: Bachelor of Engineering in Software Engineering
-      institution: Sichuan University
-      year: Mar 2018 -- Jan 2022
-      location: Chengdu, China
-      description:
-        - title: Thesis
-          contents:
-            - Brain Tumor Detection and Classification using CNN
+  sections:
+    Education:
+      - institution: Islamic University
+        location: Kushtia, Bangladesh
+        area: Statistics
+        studyType: M.Sc.
+        start_date: 2025-01-01
+        end_date: 2026-01-01
+        score: "CGPA: 3.50 / 4.00"
 
-- title: Research Experience
-  type: time_table
-  contents:
-    - title: Research Engineer Intern
-      institution: LISSI, Université Paris-Est Créteil (In close collaboration with CEA–LIST, France)
-      year: May 2025 -- Oct 2026
-      location: Créteil, France
-      description:
-        - Proposed a novel hybrid framework integrating LLM based semantic reasoning and rule-based validation for automated cybersecurity annotated BPMN model generation.
-        - Optimized annotation accuracy and efficiency through advanced prompt-engineering and retrieval-augmented generation (RAG) across multiple LLMs.
-        - Constructed a benchmark dataset and evaluation framework supporting quantitative and qualitative metrics.
-        - Achieved higher annotation accuracy (F1 = 0.516) while reducing annotation time by 95% compared to domain experts.
-        - title: Tech Stack
-          contents:
-            - Python, LangChain, LLMs, RAG, Prompt Engineering, React.js, Flask, CI/CD
-    - title: Graduate Research Assistant
-      institution: LISN, CentraleSupélec
-      year: Oct 2024 -- Feb 2025
-      location: Gif-sur-Yvette, France
-      description:
-        - Developed an unsupervised deep-learning framework combining AlexNet and Group-Equivariant CNNs (G-CNNs) to analyze large-scale medical imaging datasets.
-        - Improved clustering accuracy and feature robustness by encoding geometric symmetries, mitigating reliance on data augmentation.
-        - Implemented multi-GPU distributed training pipelines for scalable, high-performance experiments with early disease detection.
-        - title: Tech Stack
-          contents:
-            - PyTorch, OpenCV, HPC, CUDA, LaTeX
+      - institution: Islamic University
+        location: Kushtia, Bangladesh
+        area: Statistics
+        studyType: B.Sc.
+        start_date: 2019-01-01
+        end_date: 2025-01-01
+        score: "CGPA: 3.62 / 4.00 (Last 4 semesters: 3.77)"
+        highlights:
+          - Ranked 5th in a class of 50 students
+          - University Merit Scholarship (2021, 2022)
 
-- title: Professional Experience
-  type: time_table
-  contents:
-    - title: Software Engineer Intern
-      institution: Chengdu Suncape Co., Ltd
-      year: Dec 2020 -- May 2021
-      location: Chengdu, China
-      description:
-        - Developed end-to-end data pipeline for large-scale data ingestion, transformation, and analytics in distributed environments.
-        - Enhanced data preprocessing and feature-engineering, boosting predictive model accuracy by approximately 20%.
-        - Collaborated within an Agile Scrum environment to implement best practices in modular design, version control, and continuous integration.
-        - title: Tech Stack
-          contents:
-            - Apache Spark, Scikit-learn, SQL, Agile Scrum, JIRA, Git, CI/CD
+    Experience:
+      - company: Qatar Computing Research Institute (QCRI)
+        position: Remote Research Assistant
+        location: Doha, Qatar
+        start_date: 2024-03-01
+        end_date: 2025-03-01
+        summary: Contributed to the development of the MapEval benchmark for assessing geo-spatial reasoning in foundation models.
+        highlights:
+          - Assisted in data collection and annotation
+          - Evaluated 28 large language models on map-based reasoning tasks
+          - Collaborated on ICML 2025 (Spotlight) publication
 
-- title: Technical Skills
-  type: nested_list
-  contents:
-    - title: Programming & Framework
-      items:
-        - Python, C/C++ (OOP), SQL, JavaScript, TypeScript, React.js, Flask
-    - title: Data Science & ML
-      items:
-        - PyTorch, Scikit-learn, Hugging Face Transformers, LangChain, LLMs, OpenCV, CUDA
-    - title: Big Data & Cloud
-      items:
-        - PySpark, Hadoop, Apache Airflow, Azure, Vertex AI, Fabric, HPC Environments
-    - title: Graph & Database Systems
-      items:
-        - PostgreSQL, SQL Server, Neo4j, GraphDB, Cypher, SPARQL, ETL Pipelines
-    - title: Analytics & Visualization
-      items:
-        - Pandas, NumPy, Power BI, Tableau, Streamlit, D3.js
-    - title: Tools & Collaboration
-      items:
-        - Git, Docker, REST APIs, CI/CD, Agile Scrum
+    Awards:
+      - title: University Merit Scholarship
+        date: 2021
+        awarder: Islamic University, Bangladesh
 
-- title: Projects
-  type: time_table
-  contents:
-    - title: DigiScan360
-      year: Feb 2024 -- June 2024
-      description:
-        - Competitive intelligence platform developed and pitched as a startup prototype at UPC's entrepreneurship initiative
-        - title: Tech Stack
-          contents:
-            - PySpark, LLMs, Microsoft Fabric, Azure Data Factory, Power BI, GraphDB, SPARQL
-    - title: Anomaly Detection in Diesel Train Cooling Systems
-      year: Sept 2023 -- Dec 2023
-      description:
-        - Developed unsupervised models to detect anomalies in train cooling systems for the Belgian National Railway Company (SNCB)
-        - title: Tech Stack
-          contents:
-            - Python, SQL, Scikit-learn, Pandas, Numpy, Matplotlib, Tableau
-    - title: PostgreSQL Extension for Chess Game Analysis
-      year: Sept 2023 -- Dec 2023
-      description:
-        - Created a custom PostgreSQL extension for storing and analyzing chess games
-        - title: Tech Stack
-          contents:
-            - PostgreSQL, C, SQL, Linux, Database Systems, Indexing
-    - title: Brain Tumor Detection and Classification by Using CNN
-      year: Sept 2021 -- Dec 2021
-      description:
-        - Achieved 98% accuracy in brain tumor detection using a custom CNN model
-        - title: Tech Stack
-          contents:
-            - TensorFlow, Keras, Python, OpenCV
-    - title: AI-Based Disease Prediction System
-      year: Mar 2021 -- June 2021
-      description:
-        - Built a web-based symptom checker predicting over 40 diseases with machine learning algorithms
-        - title: Tech Stack
-          contents:
-            - Python, Scikit-learn, Django, ReactJS, REST APIs
+      - title: University Merit Scholarship
+        date: 2022
+        awarder: Islamic University, Bangladesh
 
-- title: Publications
-  type: time_table
-  contents:
-    - year: 2024
-      maindescription: 'C. K. Sah, L. Xiaoli, M. M. Islam and M. K. Islam, "A Critical Literature Review on Integrating Artificial Intelligence into Software Engineering Education," 2024 36th International Conference on Software Engineering Education and Training (CSEE&T), Würzburg, Germany, 2024. <a href="https://doi.org/10.1109/CSEET62301.2024.10663054">doi:10.1109/CSEET62301.2024.10663054</a>'
+    Publications:
+      - title: MapEval: A Map-Based Evaluation of Geo-Spatial Reasoning in Foundation Models
+        authors:
+          - Mahir Labib Dihan
+          - Md Tanvir Hassan
+          - Md Tanvir Parvez
+          - et al.
+        publisher: ICML 2025 (Spotlight)
+        releaseDate: 2025-01-01
+        url: https://mapeval.github.io/
+        summary: Developed a benchmark to evaluate geo-spatial reasoning capabilities in foundation models through structured map-based reasoning tasks.
 
-- title: Extra-Curricular Activities
-  type: time_table
-  contents:
-    - title: Twelfth European Big Data Management & Analytics Summer School (eBISS 2024)
-      institution: University of Padova
-      year: July 2024
-      location: Padova, Italy
-      description:
-        - Participated in the fully-funded summer school sponsored by the European Commission, focused on advanced topics in Big Data, AI, and Business Intelligence.
-        - Presented a research poster titled "Applying Knowledge Graphs in Retrieval-Augmented Generation (RAG)"
-        - <a href="https://drive.google.com/file/d/1O6SWY3PyLf2xfbrDDrASmFUANt7EXyWG/view?usp=sharing">Poster</a> | <a href="https://drive.google.com/file/d/13CsJlfRfQTe5PaTRI9jXnaI93mcKzIYs/view?usp=sharing">Paper</a>
+    Projects:
+      - name: Predicting Rice Yields Using LSTM
+        summary: Developed LSTM models using climate variables to predict rice yields.
+        highlights:
+          - Achieved R² scores of 0.94, 0.81, and 0.94
+          - Outperformed traditional regression baselines
 
-- title: Scholarships and Awards
-  type: time_table
-  contents:
-    - year: Sept 2023 -- Sept 2025
-      maindescription: Erasmus Mundus Partner Country Scholarship (Fully-Funded by the European Commission)
-    - year: Mar 2018 -- Mar 2022
-      maindescription: The Belt and Road Initiative Scholarship (Chinese Government Full Undergraduate Funding)
-    - year: YYYY -- YYYY
-      maindescription: "Scholarship Name (Funding body / brief note)"
+      - name: MapCoder – Multi-Agent Code Generation
+        summary: Conducted experiments with prompting strategies to improve code generation using large language models.
+        highlights:
+          - Contributed to dataset preparation
+          - Acknowledged in ACL conference paper
+
+      - name: Crop Yield Prediction (ML Regression)
+        summary: Built an ML pipeline for agricultural yield prediction.
+        highlights:
+          - Identified Random Forest as best-performing model
+
+      - name: Bitcoin Price Forecasting (Time Series)
+        summary: Optimized ARIMA configurations for short-term prediction.
+        highlights:
+          - Best model: ARIMA(2,1,2)
+          - RMSE: 0.0389, MAE: 0.0247
+
+    Skills:
+      - name: Programming
+        level: Advanced
+        keywords: "Python, R, SQL, C, LaTeX"
+
+      - name: Machine Learning
+        level: Advanced
+        keywords: "PyTorch, TensorFlow, Keras, Scikit-learn"
+
+      - name: Data Tools
+        level: Advanced
+        keywords: "Pandas, NumPy, SPSS"
+
+      - name: Visualization
+        level: Intermediate
+        keywords: "Matplotlib, Seaborn, Power BI"
+
+    Languages:
+      - name: Bengali
+        summary: Native
+
+      - name: English
+        summary: Fluent
+
+    Interests:
+      - name: Research Areas
+        keywords: "Large Language Models, Geo-Spatial Reasoning, Benchmark Design, Time Series Modeling, Applied Machine Learning"
+
+    Volunteer:
+      - company: IU Stats for Blood (IUSB)
+        position: Founder
+        start_date: 2023-01-01
+        end_date: 2023-12-31
+        summary: Founded and led a student initiative promoting voluntary blood donation and community engagement.

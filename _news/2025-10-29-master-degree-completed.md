@@ -5,5 +5,5 @@ inline: true
 related_posts: false
 ---
 
-**Master's Degree Achieved:** Graduated with a Master of Science in **Statistics** from **Islamic University, Bangladesh**
+**Master's Degree Achieved:** Completed a Master of Science in **Statistics** from **Islamic University, Bangladesh**
 
