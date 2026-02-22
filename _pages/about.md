@@ -12,37 +12,39 @@ profile:
     <p>+880 1798955707</p>
     <p>Dhaka, Bangladesh</p>
     <p><a href="mailto:tanvir.parvez.stat@gmail.com">tanvir.parvez.stat@gmail.com</a></p>
-    <p><a href="https://github.com/tanvirparvez04">github.com/tanvirparvez04</a></p>
-    <p><a href="https://linkedin.com/in/tanvirparvez04">linkedin.com/in/tanvirparvez04</a></p>
 
-selected_papers: false # includes a list of papers marked as "selected={true}"
+selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 announcements:
   enabled: true # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  # leave blank to include all the news in the `_news` folder
+  limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: false
+  enabled: true
+  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
+  limit: 3 # leave blank to include all the blog posts
 ---
 
+
 Developing machine learning models to solve complex real-world challenges, specifically in building scalable solutions using state-of-the-art NLP technologies and data-driven approaches.
+
 **Topics:** Machine Learning, Natural Language Processing, Data Analysis, Geo-spatial Reasoning
 
 ---
 
 ## 🎓 Education
 
-**M.Sc. in [Statistics]**  
+-**M.Sc. in [Statistics]**  
 [Islamic University, Bangladesh] (Jan, 2025 – Feb, 2026)
 
-**B.Sc. in [Statistics]**  
+-**B.Sc. in [Statistics]**  
 [Islamic University, Bangladesh] (Jan, 2019 – Jan, 2025)  
-- CGPA: 3.62 / 4.00  
-- Last four semesters’ CGPA: 3.77 / 4.00  
-- Ranked 5th in my cohort  
-- **University Merit Scholarship**, Islamic University, Bangladesh (2021, 2022)
+  - CGPA: 3.62 / 4.00  
+  - Last four semesters’ CGPA: 3.77 / 4.00  
+  - Ranked 5th in my cohort  
+  - **University Merit Scholarship**, Islamic University, Bangladesh (2021, 2022)
 
 
 My academic training includes probability theory, statistical inference, regression analysis, time series modeling, computational statistics, and mathematical foundations for machine learning.
