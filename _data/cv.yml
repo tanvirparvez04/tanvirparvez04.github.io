@@ -1,10 +1,20 @@
 cv:
   name: Md Tanvir Parvez
-  label: Research Assistant | M.Sc. $ B.Sc. in Statistics
+  label: Research Assistant | M.Sc. & B.Sc. in Statistics
   email: tanvir.parvez.stat@gmail.com
   location: Dhaka, Bangladesh
   image: ""
   summary: Graduate student in Statistics with research experience in large language models, geo-spatial reasoning, and machine learning systems. Contributed to ICML 2025 (Spotlight) publication and worked on benchmark development for evaluating foundation models.
+
+- title: General Information
+  type: map
+  contents:
+    - name: Name
+      value: Md Tanvir Parvez
+    - name: Date of Birth
+      value: 07th February 2001
+    - name: Languages
+      value: Bengali (Native), English (Fluent)
 
   social_networks:
     - network: GitHub
