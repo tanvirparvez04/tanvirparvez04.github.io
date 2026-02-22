@@ -1,189 +1,165 @@
-cv:
-  name: Albert Einstein
-  label: Scientist
-  email: einstein@example.com
-  location: Princeton, NJ
-  image: ""
-  summary: A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time
+- title: General Information
+  type: map
+  contents:
+    - name: Name
+      value: Md Kamrul Islam
+    - name: Date of Birth
+      value: 09th July 1999
+    - name: Languages
+      value: Bengali (Native), English (Fluent), Chinese (Fluent), French (Beginner)  
 
-  social_networks:
-    - network: X
-      username: AlbertEinstein
-    - network: GitHub
-      username: example
-    - network: LinkedIn
-      username: example
+- title: Research Interest
+  type: list
+  contents:
+    - Foundation Models, Retrieval-Augmented Generation, Information Extraction, Deep Learning, Computer Vision, Medical Imaging, and Knowledge Graphs.
 
-  address:
-    street: 2712 Broadway St
-    city: San Francisco
-    region: California
-    postalCode: CA 94115
-    countryCode: US
+- title: Education
+  type: time_table
+  contents:
+    - title: Erasmus Mundus Master's Degree in Big Data Management and Analytics
+      institution: CentraleSupélec, Université Paris-Saclay | Universitat Politècnica de Catalunya (UPC) | Université libre de Bruxelles (ULB)
+      year: Sept 2023 -- Oct 2025
+      location: Gif-sur-Yvette, France | Barcelona, Spain | Brussels, Belgium
+      description:
+        - title: Thesis
+          contents:
+            - "SecBPMN-GPT: A Hybrid LLM & Rule-Based Framework for Automating Security Annotation in Business Process Models"
+    - title: Bachelor of Engineering in Software Engineering
+      institution: Sichuan University
+      year: Mar 2018 -- Jan 2022
+      location: Chengdu, China
+      description:
+        - title: Thesis
+          contents:
+            - Brain Tumor Detection and Classification using CNN
 
-  sections:
-    Education:
-      - institution: University of Zurich
-        location: Zurich, Switzerland
-        url: https://www.uzh.ch/
-        area: Physics
-        studyType: PhD
-        start_date: 1900
-        end_date: 1905
-        score: ""
-        courses: "Theory of Relativity"
-        highlights:
-          - Description 1.
-          - Description 2.
+- title: Research Experience
+  type: time_table
+  contents:
+    - title: Research Engineer Intern
+      institution: LISSI, Université Paris-Est Créteil (In close collaboration with CEA–LIST, France)
+      year: May 2025 -- Oct 2026
+      location: Créteil, France
+      description:
+        - Proposed a novel hybrid framework integrating LLM based semantic reasoning and rule-based validation for automated cybersecurity annotated BPMN model generation.
+        - Optimized annotation accuracy and efficiency through advanced prompt-engineering and retrieval-augmented generation (RAG) across multiple LLMs.
+        - Constructed a benchmark dataset and evaluation framework supporting quantitative and qualitative metrics.
+        - Achieved higher annotation accuracy (F1 = 0.516) while reducing annotation time by 95% compared to domain experts.
+        - title: Tech Stack
+          contents:
+            - Python, LangChain, LLMs, RAG, Prompt Engineering, React.js, Flask, CI/CD
+    - title: Graduate Research Assistant
+      institution: LISN, CentraleSupélec
+      year: Oct 2024 -- Feb 2025
+      location: Gif-sur-Yvette, France
+      description:
+        - Developed an unsupervised deep-learning framework combining AlexNet and Group-Equivariant CNNs (G-CNNs) to analyze large-scale medical imaging datasets.
+        - Improved clustering accuracy and feature robustness by encoding geometric symmetries, mitigating reliance on data augmentation.
+        - Implemented multi-GPU distributed training pipelines for scalable, high-performance experiments with early disease detection.
+        - title: Tech Stack
+          contents:
+            - PyTorch, OpenCV, HPC, CUDA, LaTeX
 
-      - institution: Eidgenössische Technische Hochschule
-        location: Zurich, Switzerland
-        area: Physics
-        studyType: Federal teaching diploma
-        start_date: 1896
-        end_date: 1900
-        highlights:
-          - Description 1.
-          - Description 2.
+- title: Professional Experience
+  type: time_table
+  contents:
+    - title: Software Engineer Intern
+      institution: Chengdu Suncape Co., Ltd
+      year: Dec 2020 -- May 2021
+      location: Chengdu, China
+      description:
+        - Developed end-to-end data pipeline for large-scale data ingestion, transformation, and analytics in distributed environments.
+        - Enhanced data preprocessing and feature-engineering, boosting predictive model accuracy by approximately 20%.
+        - Collaborated within an Agile Scrum environment to implement best practices in modular design, version control, and continuous integration.
+        - title: Tech Stack
+          contents:
+            - Apache Spark, Scikit-learn, SQL, Agile Scrum, JIRA, Git, CI/CD
 
-    Experience:
-      - company: Institute for Advanced Study, Princeton University
-        position: Professor of Theoretical Physics
-        location: Princeton University, NJ
-        start_date: 1933
-        end_date: 1955
-        summary: Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.
-        highlights:
-          - Relativity
-          - Description 2.
+- title: Technical Skills
+  type: nested_list
+  contents:
+    - title: Programming & Framework
+      items:
+        - Python, C/C++ (OOP), SQL, JavaScript, TypeScript, React.js, Flask
+    - title: Data Science & ML
+      items:
+        - PyTorch, Scikit-learn, Hugging Face Transformers, LangChain, LLMs, OpenCV, CUDA
+    - title: Big Data & Cloud
+      items:
+        - PySpark, Hadoop, Apache Airflow, Azure, Vertex AI, Fabric, HPC Environments
+    - title: Graph & Database Systems
+      items:
+        - PostgreSQL, SQL Server, Neo4j, GraphDB, Cypher, SPARQL, ETL Pipelines
+    - title: Analytics & Visualization
+      items:
+        - Pandas, NumPy, Power BI, Tableau, Streamlit, D3.js
+    - title: Tools & Collaboration
+      items:
+        - Git, Docker, REST APIs, CI/CD, Agile Scrum
 
-      - company: California Institute of Technology
-        position: Visiting Professor
-        location: Pasadena, California, US
-        start_date: 1933
-        end_date: 1933
-        highlights:
-          - Description 1.
-          - Description 2.
+- title: Projects
+  type: time_table
+  contents:
+    - title: DigiScan360
+      year: Feb 2024 -- June 2024
+      description:
+        - Competitive intelligence platform developed and pitched as a startup prototype at UPC's entrepreneurship initiative
+        - title: Tech Stack
+          contents:
+            - PySpark, LLMs, Microsoft Fabric, Azure Data Factory, Power BI, GraphDB, SPARQL
+    - title: Anomaly Detection in Diesel Train Cooling Systems
+      year: Sept 2023 -- Dec 2023
+      description:
+        - Developed unsupervised models to detect anomalies in train cooling systems for the Belgian National Railway Company (SNCB)
+        - title: Tech Stack
+          contents:
+            - Python, SQL, Scikit-learn, Pandas, Numpy, Matplotlib, Tableau
+    - title: PostgreSQL Extension for Chess Game Analysis
+      year: Sept 2023 -- Dec 2023
+      description:
+        - Created a custom PostgreSQL extension for storing and analyzing chess games
+        - title: Tech Stack
+          contents:
+            - PostgreSQL, C, SQL, Linux, Database Systems, Indexing
+    - title: Brain Tumor Detection and Classification by Using CNN
+      year: Sept 2021 -- Dec 2021
+      description:
+        - Achieved 98% accuracy in brain tumor detection using a custom CNN model
+        - title: Tech Stack
+          contents:
+            - TensorFlow, Keras, Python, OpenCV
+    - title: AI-Based Disease Prediction System
+      year: Mar 2021 -- June 2021
+      description:
+        - Built a web-based symptom checker predicting over 40 diseases with machine learning algorithms
+        - title: Tech Stack
+          contents:
+            - Python, Scikit-learn, Django, ReactJS, REST APIs
 
-      - company: Kaiser Wilhelm Institute for Physics
-        position: Director
-        location: Berlin, Germany
-        start_date: 1917
-        end_date: 1933
+- title: Publications
+  type: time_table
+  contents:
+    - year: 2024
+      maindescription: 'C. K. Sah, L. Xiaoli, M. M. Islam and M. K. Islam, "A Critical Literature Review on Integrating Artificial Intelligence into Software Engineering Education," 2024 36th International Conference on Software Engineering Education and Training (CSEE&T), Würzburg, Germany, 2024. <a href="https://doi.org/10.1109/CSEET62301.2024.10663054">doi:10.1109/CSEET62301.2024.10663054</a>'
 
-      - company: Karl-Ferdinand University
-        position: Professor of Theoretical Physics
-        location: Prague, Czechoslovakia
-        start_date: 1911
-        end_date: 1917
+- title: Extra-Curricular Activities
+  type: time_table
+  contents:
+    - title: Twelfth European Big Data Management & Analytics Summer School (eBISS 2024)
+      institution: University of Padova
+      year: July 2024
+      location: Padova, Italy
+      description:
+        - Participated in the fully-funded summer school sponsored by the European Commission, focused on advanced topics in Big Data, AI, and Business Intelligence.
+        - Presented a research poster titled "Applying Knowledge Graphs in Retrieval-Augmented Generation (RAG)"
+        - <a href="https://drive.google.com/file/d/1O6SWY3PyLf2xfbrDDrASmFUANt7EXyWG/view?usp=sharing">Poster</a> | <a href="https://drive.google.com/file/d/13CsJlfRfQTe5PaTRI9jXnaI93mcKzIYs/view?usp=sharing">Paper</a>
 
-      - company: University of Zurich
-        position: Associate Professor of Theoretical Physics
-        location: Zurich, Switzerland
-        start_date: 1909
-        end_date: 1911
-
-    Volunteer:
-      - company: People's Climate March
-        position: Lead Organizer
-        location: Zurich, Switzerland
-        start_date: 2014-04-01
-        end_date: 2015-07-01
-        summary: Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.
-        highlights:
-          - "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march."
-          - "Men of the year 2014 by Time magazine"
-
-    Awards:
-      - title: Nobel Prize in Physics
-        authors:
-          - "Royal Swedish Academy of Sciences"
-        date: 1921-11-01
-        awarder: Royal Swedish Academy of Sciences
-        url: https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/
-        summary: The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'
-
-      - title: Max Planck Medal
-        authors:
-          - "German Physical Society"
-        date: 2029
-        awarder: German Physical Society
-        summary: Awarded for outstanding scientific achievement
-
-    Publications:
-      - title: Zur Elektrodynamik bewegter Körper
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-06-30
-        url: https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies
-        summary: It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source.
-
-      - title: Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-03-18
-        url: https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt
-        summary: In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921.
-
-      - title: Die Grundlage der allgemeinen Relativitätstheorie
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1916-03-20
-        url: https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie
-        summary: The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914).
-
-    Skills:
-      - name: Physics
-        level: Master
-        icon: fa-solid fa-hashtag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
-
-    Languages:
-      - name: German
-        summary: "Native speaker"
-
-      - name: English
-        summary: "Fluent"
-
-    Interests:
-      - name: Physics
-        icon: fa-solid fa-tag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
-
-    Certificates:
-      - name: Machine Learning
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-location-dot
-
-      - name: Quantum Computing
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-tag
-
-      - name: Quantum Information
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-envelope
-
-    Projects:
-      - name: Quantum Computing
-        summary: Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.
-        highlights:
-          - Quantum Teleportation
-          - Quantum Cryptography
-        start_date: 2018-01-01
-        end_date: 2018-01-01
-
-    References:
-      - name: Professor John Doe
-        icon: fa-solid fa-laptop
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
-
-      - name: Professor Jane Smith
-        icon: fa-solid fa-thumbtack
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+- title: Scholarships and Awards
+  type: time_table
+  contents:
+    - year: Sept 2023 -- Sept 2025
+      maindescription: Erasmus Mundus Partner Country Scholarship (Fully-Funded by the European Commission)
+    - year: Mar 2018 -- Mar 2022
+      maindescription: The Belt and Road Initiative Scholarship (Chinese Government Full Undergraduate Funding)
+    - year: YYYY -- YYYY
+      maindescription: "Scholarship Name (Funding body / brief note)"

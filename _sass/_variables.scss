@@ -24,6 +24,11 @@ $pink-color: #f92080 !default;
 $pink-color-light: #ffdddd !default;
 $yellow-color: #efcc00 !default;
 
+// Green color as theme
+$green-theme-color: #00a86b !default;
+$green-theme-color-dark: #007a4f !default;
+$green-theme-color-light: #00d984 !default;
+
 $grey-color: #828282 !default;
 $grey-color-light: color.adjust($grey-color, $lightness: 40%);
 $grey-color-dark: #1c1c1d;
@@ -34,11 +39,14 @@ $black-color: #000000 !default;
 
 // Theme colors
 
-$code-bg-color-light: rgba($purple-color, 0.05);
+$code-bg-color-light: rgba($green-theme-color, 0.05);
 $code-bg-color-dark: #2c3237 !default;
 
 // Font awesome location
 $fa-font-path: "../webfonts";
+
+// Tabler icons location
+$ti-font-path: "../fonts";
 
 // Back To Top button config
 $back-to-top-z-index: 10;
@@ -47,6 +55,3 @@ $back-to-top-right: 30px;
 $back-to-top-diameter: 40px;
 $back-to-top-height: $back-to-top-diameter;
 $back-to-top-width: $back-to-top-diameter;
-
-// Max width default
-$max-content-width: 930px !default;

@@ -1,0 +1,119 @@
+---
+layout: default
+---
+{% if page._styles %}
+  <style type="text/css">{{ page._styles }}</style>
+{% endif %}
+
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    {% if page.title_subtitle and page.title_subtitle != "" %}
+      <div class="post-description mb-2">{{ page.title_subtitle | markdownify }}</div>
+    {% endif %}
+    {% if page.authors_list and page.authors_list.size > 0 %}
+      <div class="post-authors text-muted mb-2">
+        {% for a in page.authors_list %}
+          <a href="{{ a.url }}" target="_blank" rel="noopener noreferrer" class="author-link">{{ a.name }}</a>{% if forloop.last %}¹{% else %}¹, {% endif %}
+        {% endfor %}
+        {% if page.authors_affiliation %}
+          <div class="authors-affiliation mt-1">{{ page.authors_affiliation }}</div>
+        {% endif %}
+      </div>
+    {% elsif page.authors and page.authors != "" %}
+      <div class="post-authors text-muted mb-2">{{ page.authors | markdownify }}</div>
+    {% endif %}
+    <nav class="research-nav mb-3 py-3" aria-label="Page sections">
+      <div class="d-flex flex-wrap justify-content-center gap-2 gap-md-3">
+        {% if page.abstract and page.abstract != "" %}<a href="#abstract">Abstract</a>{% endif %}
+        {% if page.contributions and page.contributions.size > 0 %}<a href="#contributions">Contributions</a>{% endif %}
+        {% unless page.nav_hide_motivation_dataset %}
+        <a href="#research-problem">Motivation</a>
+        <a href="#dataset">Dataset</a>
+        {% endunless %}
+        <a href="#method">Method</a>
+        <a href="#results">Results</a>
+        <a href="#future-work">Limitations</a>
+      </div>
+    </nav>
+    {% if page.paper_url or page.code_url or page.report_pdf_url or page.slides_url or page.poster_url or page.dataset_url %}
+      <div class="project-research-links d-flex justify-content-center flex-wrap gap-3 mb-2">
+        {% if page.paper_url %}
+          <a href="{{ page.paper_url }}" target="_blank" rel="noopener noreferrer" class="project-research-link-icon"><i class="si si-zenodo" aria-hidden="true"></i><span>Paper</span></a>
+        {% endif %}
+        {% if page.code_url %}
+          <a href="{{ page.code_url }}" target="_blank" rel="noopener noreferrer" class="project-research-link-icon"><i class="fa-brands fa-github" aria-hidden="true"></i><span>Code</span></a>
+        {% endif %}
+        {% if page.dataset_url %}
+          <a href="{{ page.dataset_url }}" target="_blank" rel="noopener noreferrer" class="project-research-link-icon"><i class="fa-solid fa-database" aria-hidden="true"></i><span>Dataset</span></a>
+        {% endif %}
+        {% if page.poster_url %}
+          <a href="{{ page.poster_url }}" target="_blank" rel="noopener noreferrer" class="project-research-link-icon"><i class="fa-solid fa-image" aria-hidden="true"></i><span>Poster</span></a>
+        {% endif %}
+        {% if page.report_pdf_url %}
+          <a href="{{ page.report_pdf_url }}" target="_blank" rel="noopener noreferrer" class="project-research-link-icon"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i><span>Report</span></a>
+        {% endif %}
+        {% if page.slides_url %}
+          <a href="{{ page.slides_url }}" target="_blank" rel="noopener noreferrer" class="project-research-link-icon"><i class="fa-solid fa-presentation-screen" aria-hidden="true"></i><span>Slides</span></a>
+        {% endif %}
+      </div>
+    {% endif %}
+    {% if page.taglines and page.taglines.size > 0 %}
+      <div class="post-description mb-2">
+        {% for t in page.taglines %}<p class="mb-1">{{ t }}</p>{% endfor %}
+      </div>
+    {% elsif page.tagline and page.tagline != "" %}
+      <p class="post-description">{{ page.tagline }}</p>
+    {% endif %}
+  </header>
+
+  <article>
+    {% if page.teaser_image and page.teaser_image != "" %}
+      <figure class="figure mb-4">
+        {% include figure.liquid loading="eager" path=page.teaser_image sizes="(min-width: 768px) 80vw, 100vw" alt="Overview" class="figure-img img-fluid rounded" %}
+        {% if page.teaser_caption and page.teaser_caption != "" %}
+          <figcaption class="figure-caption text-end">{{ page.teaser_caption }}</figcaption>
+        {% endif %}
+      </figure>
+    {% endif %}
+
+    {% if page.tldr and page.tldr.size > 0 %}
+      <h2 id="tldr">TL;DR</h2>
+      <div class="prose-max">
+        <ul>{% for item in page.tldr %}<li>{{ item }}</li>{% endfor %}</ul>
+      </div>
+    {% endif %}
+
+    {% if page.abstract and page.abstract != "" %}
+      <h2 id="abstract">Abstract</h2>
+      <div class="abstract-prose">
+        <blockquote class="block-tip"><p>{{ page.abstract }}</p></blockquote>
+      </div>
+    {% endif %}
+
+    {% if page.contributions and page.contributions.size > 0 %}
+      <h2 id="contributions">Key contributions</h2>
+      <div class="prose-max">
+        <ul>{% for item in page.contributions %}<li>{{ item }}</li>{% endfor %}</ul>
+      </div>
+    {% endif %}
+
+    {% if page.method_image and page.method_image != "" %}
+      <h2 id="method">Training pipeline</h2>
+      <figure class="figure method-figure">
+        <img src="{{ page.method_image | relative_url }}" alt="Methodology pipeline" class="figure-img img-fluid rounded" loading="lazy" />
+        {% if page.method_caption and page.method_caption != "" %}
+          <figcaption class="figure-caption text-center mt-2">{{ page.method_caption }}</figcaption>
+        {% endif %}
+      </figure>
+    {% endif %}
+
+    <div class="project-research-content">
+      {{ content }}
+    </div>
+
+    <div class="research-back-link mt-5 pt-4 border-top">
+      <a href="{{ '/projects/' | relative_url }}" class="research-back-link-a"><i class="fa-solid fa-arrow-left me-2" aria-hidden="true"></i>Back to Projects</a>
+    </div>
+  </article>
+</div>

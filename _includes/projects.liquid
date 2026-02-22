@@ -1,35 +1,67 @@
 <div class="col">
-  <a href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}">
-    <div class="card h-100 hoverable">
+  <div class="card h-100 hoverable">
+    {% unless project.redirect %}
       {% if project.img %}
-        {%
-          include figure.liquid
-          loading="eager"
-          path=project.img
-          sizes = "250px"
-          alt="project thumbnail"
-          class="card-img-top"
-        %}
+        <a href="{{ project.url | relative_url }}" class="card-img-link">
+          <div class="project-card-img-wrap">
+            {% include figure.liquid loading="eager" path=project.img sizes="(min-width: 768px) 50vw, 100vw" alt="project thumbnail" class="card-img-top" %}
+          </div>
+        </a>
       {% endif %}
-      <div class="card-body">
-        <h2 class="card-title">{{ project.title }}</h2>
-        <p class="card-text">{{ project.description }}</p>
-        <div class="row ml-1 mr-1 p-0">
+    {% else %}
+      {% if project.img %}
+        <div class="project-card-img-wrap">
+          {% include figure.liquid loading="eager" path=project.img sizes="(min-width: 768px) 50vw, 100vw" alt="project thumbnail" class="card-img-top" %}
+        </div>
+      {% endif %}
+    {% endunless %}
+    <div class="card-body d-flex flex-column">
+      <div class="project-header">
+        {% unless project.redirect %}
+          <a href="{{ project.url | relative_url }}" class="card-title-link">
+            <h2 class="card-title">{{ project.title }}</h2>
+          </a>
+        {% else %}
+          <h2 class="card-title">{{ project.title }}</h2>
+        {% endunless %}
+      </div>
+      {% if project.semester or project.year %}
+        <span class="project-year">{{ project.semester | default: project.year }}</span>
+      {% endif %}
+      <p class="card-text flex-grow-1">{{ project.description }}</p>
+      
+      {% if project.technologies %}
+        <div class="project-technologies {% if project.redirect and project.github %}mb-3{% elsif project.redirect %}mb-0{% else %}mb-3{% endif %}">
+          <div class="tech-tags">
+            {% assign tech_list = project.technologies | split: ", " %}
+            {% for tech in tech_list %}
+              <span class="tech-tag">{{ tech | strip }}</span>
+            {% endfor %}
+          </div>
+        </div>
+      {% endif %}
+      
+      {% unless project.redirect %}
+        <div class="project-footer mt-auto">
+          <a href="{{ project.url | relative_url }}" class="project-detail-link" onclick="event.stopPropagation();">
+            View details <i class="fa-solid fa-arrow-right fa-sm ms-1"></i>
+          </a>
           {% if project.github %}
-            <div class="github-icon">
-              <div class="icon" data-toggle="tooltip" title="Code Repository">
-                <a href="{{ project.github }}"><i class="fa-brands fa-github gh-icon"></i></a>
-              </div>
-              {% if project.github_stars %}
-                <span class="stars" data-toggle="tooltip" title="GitHub Stars">
-                  <i class="fa-solid fa-star"></i>
-                  <span id="{{ project.github_stars }}-stars"></span>
-                </span>
-              {% endif %}
-            </div>
+            <a href="{{ project.github }}" class="github-link d-block mt-1" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();">
+              <i class="fa-brands fa-github"></i> View on GitHub
+            </a>
           {% endif %}
         </div>
-      </div>
+      {% elsif project.github %}
+        <div class="project-footer mt-auto">
+          <a href="{{ project.github }}" class="github-link" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();">
+            <i class="fa-brands fa-github"></i> View on GitHub
+          </a>
+        </div>
+      {% endunless %}
     </div>
-  </a>
+    {% unless project.redirect %}
+      <a href="{{ project.url | relative_url }}" class="card-overlay-link"></a>
+    {% endunless %}
+  </div>
 </div>

@@ -22,7 +22,7 @@
         </a>
       {% elsif site.enable_navbar_social %}
         <!-- Social Icons -->
-        <div class="navbar-brand social">{% social_links %}</div>
+        <div class="navbar-brand social">{% include social.liquid %}</div>
       {% endif %}
       <!-- Navbar Toggle -->
       <button
@@ -41,6 +41,43 @@
       </button>
 
       <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <!-- Social Icons (Left Side) -->
+        <ul class="navbar-nav mr-auto flex-nowrap">
+          {% for social in site.data.socials %}
+            {% case social[0] %}
+              {% when 'email' %}
+                <li class="nav-item">
+                  <a class="nav-link social-icon" href="mailto:{{ social[1] | encode_email }}" title="Email" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span class="sr-only">Email</span>
+                  </a>
+                </li>
+              {% when 'github_username' %}
+                <li class="nav-item">
+                  <a class="nav-link social-icon" href="https://github.com/{{ social[1] }}" title="GitHub" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github"></i>
+                    <span class="sr-only">GitHub</span>
+                  </a>
+                </li>
+              {% when 'linkedin_username' %}
+                <li class="nav-item">
+                  <a class="nav-link social-icon" href="https://www.linkedin.com/in/{{ social[1] }}" title="LinkedIn" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span class="sr-only">LinkedIn</span>
+                  </a>
+                </li>
+              {% when 'kaggle_id' %}
+                <li class="nav-item">
+                  <a class="nav-link social-icon" href="https://www.kaggle.com/{{ social[1] }}" title="Kaggle" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-kaggle"></i>
+                    <span class="sr-only">Kaggle</span>
+                  </a>
+                </li>
+            {% endcase %}
+          {% endfor %}
+        </ul>
+        
+        <!-- Navigation Links (Right Side) -->
         <ul class="navbar-nav ml-auto flex-nowrap">
           {% for page in site.pages %}
             {% if page.permalink == '/' %} {% assign about_title = page.title %} {% endif %}
@@ -121,7 +158,7 @@
             <!-- Search -->
             <li class="nav-item">
               <button id="search-toggle" title="Search" onclick="openSearchModal()">
-                <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span>
+                <span class="nav-link">ctrl k <i class="ti ti-search"></i></span>
               </button>
             </li>
           {% endif %}
@@ -129,9 +166,9 @@
             <!-- Toogle theme mode -->
             <li class="toggle-container">
               <button id="light-toggle" title="Change theme">
-                <i class="fa-half-sun-moon" id="light-toggle-system"></i>
-                <i class="fa-solid fa-moon" id="light-toggle-dark"></i>
-                <i class="fa-solid fa-sun" id="light-toggle-light"></i>
+                <i class="ti ti-sun-moon" id="light-toggle-system"></i>
+                <i class="ti ti-moon-filled" id="light-toggle-dark"></i>
+                <i class="ti ti-sun-filled" id="light-toggle-light"></i>
               </button>
             </li>
           {% endif %}

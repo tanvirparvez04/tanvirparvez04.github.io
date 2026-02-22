@@ -11,7 +11,7 @@ layout: default
         {{ site.title }}
       {% endif %}
     </h1>
-    <p class="desc">{{ page.subtitle }}</p>
+    <p class="desc" style="font-size: 0.95rem;">{{ page.subtitle }}</p>
   </header>
 
   <article>
@@ -33,7 +33,37 @@ layout: default
           %}
         {% endif %}
         {% if page.profile.more_info %}
-          <div class="more-info">{{ page.profile.more_info }}</div>
+          <div class="more-info">
+            {% assign info_content = page.profile.more_info %}
+            {% assign paragraphs = info_content | split: '<p>' %}
+            {% for para in paragraphs %}
+              {% if para != blank and para != info_content %}
+                {% assign clean_para = para | replace: '</p>', '' | strip %}
+                {% if clean_para != blank %}
+                  {% if clean_para contains 'mailto:' %}
+                    {% assign email_start = clean_para | split: 'mailto:' | last %}
+                    {% assign email_part = email_start | split: '"' | first %}
+                    {% assign email_text_start = clean_para | split: '>' | last %}
+                    {% assign email_text = email_text_start | split: '<' | first %}
+                    <div class="contact-item">
+                      <i class="fa-solid fa-envelope"></i>
+                      <a href="mailto:{{ email_part }}">{{ email_text }}</a>
+                    </div>
+                  {% elsif clean_para contains '+' %}
+                    <div class="contact-item">
+                      <i class="fa-solid fa-phone"></i>
+                      <span>{{ clean_para }}</span>
+                    </div>
+                  {% else %}
+                    <div class="contact-item">
+                      <i class="fa-solid fa-map-marker-alt"></i>
+                      <span>{{ clean_para }}</span>
+                    </div>
+                  {% endif %}
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+          </div>
         {% endif %}
       </div>
     {% endif %}
@@ -59,7 +89,7 @@ layout: default
     <!-- Selected papers -->
     {% if page.selected_papers %}
       <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
+        <a href="{{ '/research/' | relative_url }}" style="color: inherit">selected publications</a>
       </h2>
       {% include selected_papers.liquid %}
     {% endif %}
@@ -67,7 +97,7 @@ layout: default
     <!-- Social -->
     {% if page.social %}
       <div class="social">
-        <div class="contact-icons">{% social_links %}</div>
+        <div class="contact-icons">{% include social.liquid %}</div>
 
         <div class="contact-note">{{ site.contact_note }}</div>
       </div>
