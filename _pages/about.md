@@ -25,7 +25,24 @@ latest_posts:
   enabled: false
 ---
 
-Building AI-driven systems at the intersection of foundation models, medical imaging, and big data, bridging research and real-world deployment.
+Developing machine learning models to solve complex real-world challenges, specifically in building scalable solutions using state-of-the-art NLP technologies and data-driven approaches.
+
+**Topics:** Machine Learning, Natural Language Processing, Data Analysis, Geo-spatial Reasoning
+
+## 🎓 Education
+
+- **M.Sc. in [Statistics]**  
+  [Islamic University, Bangladesh] (Jan, 2025 – Feb, 2026)
+
+- **B.Sc. in [Statistics]**  
+  [Islamic University, Bangladesh] (Jan, 2019 – Jan, 2025)  
+  - CGPA: 3.62 / 4.00  
+  - Last four semesters’ CGPA: 3.77 / 4.00  
+  - Ranked 5th in my cohort  
+  - **University Merit Scholarship**, Islamic University, Bangladesh (2021, 2022)
+
+
+My academic training includes probability theory, statistical inference, regression analysis, time series modeling, computational statistics, and mathematical foundations for machine learning.
 
 ## Education
 
