@@ -53,35 +53,3 @@ $max-content-width: {{ site.max_width }};
   color: #ffffff !important;
 }
 
-* ============================= */
-/* Bigger Typography & Layout */
-/* ============================= */
-
-/* Global Font Size */
-body {
-  font-size: 20px;   /* strong increase */
-  line-height: 1.8;  /* better readability */
-}
-
-/* Headings */
-h1 { font-size: 2.6rem; }
-h2 { font-size: 2.1rem; }
-h3 { font-size: 1.6rem; }
-
-/* Make Content Area Wider */
-.container {
-  max-width: 1250px !important;
-}
-
-/* Increase Section Spacing */
-.post {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-/* Increase Navbar Size */
-.navbar {
-  padding-top: 18px;
-  padding-bottom: 18px;
-  font-size: 18px;
-}
