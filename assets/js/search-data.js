@@ -391,14 +391,14 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-bachelor-s-degree-achieved-graduated-with-a-master-of-science-in-statistics-from-islamic-university-bangladesh",
-          title: 'Bachelor’s Degree Achieved: Graduated with a Master of Science in Statistics from Islamic...',
+            },},{id: "news-bachelor-s-degree-achieved-graduated-with-a-bachelor-of-science-in-statistics-from-islamic-university-bangladesh",
+          title: 'Bachelor’s Degree Achieved: Graduated with a Bachelor of Science in Statistics from Islamic...',
           description: "",
           section: "News",},{id: "news-research-milestone-paper-accepted-at-icml-2025-spotlight-mapeval-a-map-based-evaluation-of-geo-spatial-reasoning-in-foundation-models",
           title: 'Research Milestone: Paper accepted at ICML 2025 (Spotlight) — MapEval: A Map-Based Evaluation...',
           description: "",
-          section: "News",},{id: "news-master-s-degree-achieved-graduated-with-a-master-of-science-in-statistics-from-islamic-university-bangladesh",
-          title: 'Master’s Degree Achieved: Graduated with a Master of Science in Statistics from Islamic...',
+          section: "News",},{id: "news-master-s-degree-achieved-completed-a-master-of-science-in-statistics-from-islamic-university-bangladesh",
+          title: 'Master’s Degree Achieved: Completed a Master of Science in Statistics from Islamic University,...',
           description: "",
           section: "News",},{id: "projects-anomaly-detection-in-diesel-train-cooling-systems",
           title: 'Anomaly Detection in Diesel Train Cooling Systems',
