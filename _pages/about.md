@@ -6,12 +6,12 @@ subtitle: Mathematics reveals the patterns of the universe; code transforms them
 
 profile:
   align: right
-  image: prof_pic.png
+  image: tanvir.portfolio.jpeg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>+33 6 52 24 36 55</p>
-    <p>Paris, France</p>
-    <p><a href="mailto:mdkamrul.islam@student-cs.fr">mdkamrul.islam@student-cs.fr</a></p>
+    <p>+880 1798955707</p>
+    <p>Dhaka, Bangladesh</p>
+    <p><a href="mailto:tanvir.parvez.stat@gmail.com">tanvir.parvez.stat@gmail.com</a></p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
