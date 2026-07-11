@@ -32,13 +32,15 @@ Developing machine learning models to solve complex real-world challenges, speci
 ## 🎓 Education
 
 - **M.Sc. in [Statistics](https://www.iu.ac.bd/index.php/site/dept/STC)**  
-  [Islamic University, Bangladesh](https://iu.ac.bd/) (Jan 2025 – Jan 2026)
+  [Islamic University, Bangladesh](https://iu.ac.bd/) (Jan 2025 – Mar 2026)
+  - CGPA: 3.64 / 4.00   
+  - Ranked 6th out of 50 students
 
 - **B.Sc. in [Statistics](https://www.iu.ac.bd/index.php/site/dept/STC)**  
   [Islamic University, Bangladesh](https://iu.ac.bd/) (Jan 2019 – Jan 2025)  
   - CGPA: 3.62 / 4.00  
   - Last four semesters’ CGPA: 3.77 / 4.00  
-  - Ranked 5th in my cohort  
+  - Ranked 5th out of 50 students
   - University Merit Scholarship (2021, 2022)
 
 My academic training includes probability theory, statistical inference, regression analysis, time series modeling, computational statistics, Data mining, Biostatistics, Bioinformatics, and mathematical foundations for machine learning.
